@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="30px"
+    android:paddingBottom="30px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recycler_item_describe_text_first"
+            android:layout_width="460px"
+            android:layout_height="wrap_content"
+            android:text="dljaojojjfajojojojeqqijlijdoaijhajojjfajojojojlkjldjaijdoaijhafk"
+            android:textSize="36px"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/recycler_item_first_img"
+            android:layout_width="232px"
+            android:layout_height="180px"
+            android:scaleType="centerCrop"
+            android:background="@drawable/recyclerview_img"
+            android:layout_marginLeft="20px"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:id="@+id/recycler_item_real_time_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实时 · "
+            android:textSize="20px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recycler_item_name_text_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recycler_item_real_time_first"
+            android:text="haha哈哈"
+            android:textSize="20px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recycler_item_comment_text_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/recycler_item_name_text_first"
+            android:text="115评"
+            android:textSize="20px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recycler_item_time_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时前"
+            android:textSize="20px"
+            android:layout_toLeftOf="@+id/recycler_item_delete_img_first"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/recycler_item_delete_img_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

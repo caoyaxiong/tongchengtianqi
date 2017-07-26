@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--主页面底部的样式-->
+    <style name="BottomStyle">
+        <item name="android:layout_width">0px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">5px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">30px</item>
+    </style>
+
+    <!--标题栏样式-->
+    <style name="NotitleTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--TabLayout的字体样式-->
+    <style name="CustomTabLayoutTextAppearance"
+        parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--TabLayout的样式-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0px</item>
+        <item name="tabPaddingStart">0px</item>
+        <item name="tabPaddingEnd">0px</item>
+        <item name="paddingStart">0px</item>
+        <item name="tabContentStart">0px</item>
+        <item name="tabBackground">@color/transparent</item>
+        <item name="tabSelectedTextColor">#FF37FF00</item>
+        <item name="tabTextColor">#FF0B0B0B</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabGravity">center</item>
+       <!-- <item name="tabTextAppearance">@style/CustomTabLayoutTextAppearance</item>-->
+    </style>
+
+</resources>

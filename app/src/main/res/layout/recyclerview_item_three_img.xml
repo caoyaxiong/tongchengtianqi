@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="30px"
+    android:paddingBottom="30px">
+
+    <TextView
+        android:id="@+id/recycler_item_describe_text_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36px"
+        android:textColor="@color/black"
+        android:text="daddasdsdsds"/>
+
+    <LinearLayout
+        android:id="@+id/recycler_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:weightSum="3"
+        android:layout_below="@+id/recycler_item_describe_text_third"
+        android:layout_marginTop="20px">
+
+    <ImageView
+        android:id="@+id/recycler_item_third_img_1"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recyclerview_img" />
+
+    <ImageView
+        android:id="@+id/recycler_item_third_img_2"
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recyclerview_img"
+        android:layout_marginLeft="5px"/>
+
+    <ImageView
+        android:id="@+id/recycler_item_third_img_3"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recyclerview_img"
+        android:layout_marginLeft="5px"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/recycler_linearlayout">
+
+        <TextView
+            android:id="@+id/recycler_item_real_time_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" · "
+            android:textSize="20px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recycler_item_name_text_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recycler_item_real_time_third"
+            android:text=""
+            android:textSize="20px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recycler_item_comment_text_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/recycler_item_name_text_third"
+            android:text="115"
+            android:textSize="20px"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/comment_three_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评"
+            android:textSize="20px"
+            android:layout_toRightOf="@+id/recycler_item_comment_text_third"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/recycler_item_time_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时前"
+            android:textSize="20px"
+            android:layout_toLeftOf="@+id/recycler_item_delete_img_third"
+            android:layout_marginRight="10px"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/recycler_item_delete_img_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete"
+            android:layout_centerVertical="true"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>
